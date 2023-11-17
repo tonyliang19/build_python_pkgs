@@ -1,0 +1,3 @@
+[submodule "mogonet"]
+	path = mogonet
+	url = https://github.com/tonyliang19/mogonet_pkg.git
