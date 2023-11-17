@@ -11,8 +11,8 @@ SHELL=/bin/bash
 # Docker related ------------------------------------------------
 build: ${DKF}
 	docker build -t ${IMAGE_NAME} \
-								--build-arg PY_PKG_SRC=${PY_PKG_SRC} \
-								-f ${DKF} .
+		--build-arg PY_PKG_SRC=${PY_PKG_SRC} \
+		-f ${DKF} .
 	@(docker rmi $$(docker images -q -f dangling=true) 2>/dev/null) || (echo "No image to delete" && exit 1)
 
 run:
