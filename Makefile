@@ -8,6 +8,12 @@ PY_PKG_SRC=mogonet
 SHELL=/bin/bash
 # Targets to build
 
+help:
+	@echo "Run 'make build' to build the docker image"
+	@echo "Run 'make run' to instantiate docker container"
+	@echo "Run 'make upload' to publish bundled package
+	@echo "Run 'make clean' to clear built stuff"
+
 # Docker related ------------------------------------------------
 build: ${DKF}
 	docker build -t ${IMAGE_NAME} \
