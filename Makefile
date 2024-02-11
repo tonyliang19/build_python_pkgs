@@ -11,7 +11,7 @@ SHELL=/bin/bash
 help:
 	@echo "Run 'make build' to build the docker image"
 	@echo "Run 'make run' to instantiate docker container"
-	@echo "Run 'make upload' to publish bundled package
+	@echo "Run 'make upload' to publish bundled package"
 	@echo "Run 'make clean' to clear built stuff"
 
 # Docker related ------------------------------------------------
